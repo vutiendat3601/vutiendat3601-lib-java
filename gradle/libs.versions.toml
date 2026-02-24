@@ -1,0 +1,21 @@
+# https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
+
+[versions]
+lombok = "1.18.42"
+slf4j-api = "2.0.17"
+jakarta-servlet-api = "6.1.0"
+
+# Plugin
+googleJibPluginVersion = "3.4.5"
+spotlessPluginVersion = "7.0.2"
+
+[libraries]
+lombok = {group = "org.projectlombok", name = "lombok", version.ref = "lombok"}
+slf4j-api = {group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j-api"}
+jakarta-servlet-api = {group = "jakarta.servlet", name = "jakarta.servlet-api", version.ref = "jakarta-servlet-api"}
+
+[plugins]
+# springBootPlugin = {id = "org.springframework.boot", version.ref = "springBootPluginVersion"}
+# springDependencyManagementPlugin = {id = "io.spring.dependency-management", version.ref = "springDependencyManagementPluginVersion"}
+# spotlessPlugin = {id = "com.diffplug.spotless", version.ref = "spotlessPluginVersion"}
+# googleJibPlugin = {id = "com.google.cloud.tools.jib", version.ref = "googleJibPluginVersion"}
